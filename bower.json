@@ -1,0 +1,17 @@
+{
+  "name": "kanbanbentsura",
+  "description": "quadro Kanban",
+  "main": "index.js",
+  "authors": [
+    "Aloysio Ventura"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/aloysioVentura/kanbanbentsura",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "kanbanbentsura",
+  "version": "1.0.0",
+  "description": "quadro Kanban",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aloysioVentura/kanbanbentsura.git"
+  },
+  "author": "Aloysio Ventura",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aloysioVentura/kanbanbentsura/issues"
+  },
+  "homepage": "https://github.com/aloysioVentura/kanbanbentsura#readme"
+}
