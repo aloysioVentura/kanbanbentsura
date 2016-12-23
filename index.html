@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap.min.css">
     <link rel="stylesheet" href="bower_components\bootstrap\dist\css\bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css\custom.css">
     <script type="text/javascript" src="bower_components\angular\angular.min.js"></script>
     <script type="text/javascript" src="app\app.js"></script>
     <script type="text/javascript" src="bower_components\jquery\dist\jquery.min.js"></script>
@@ -12,27 +13,32 @@
 </head>
 <body ng-app="app">
     <div ng-controller="hello" class="content-fluid">
-        <header><h1 class="text-center">Form Boladão</h1></header>
-        <section class="col-sm-8 col-sm-offset-2">
-            <div class="form-inline">
+        <header><h1 class="text-center text-primary">Form Boladão</h1></header>
+        <section class="col-sm-8 col-sm-offset-2 bg-primary rounded-block">
+          <form>
                 <div class="form-group">
-                <input type="text" id="form-name" class="form-control" placeholder="Nome" ng-model="user.name">
+                <label for="email">Nome</label>
+                <input type="text" class="form-control" id="name" ng-model="user.name">
                 </div>
                 <div class="form-group">
-                <input type="text" id="form-last" class="form-control" placeholder="Sobrenome" ng-model="user.last">
+                <label for="last">Sobrenome</label>
+                <input type="email" class="form-control" id="last" ng-model="user.last">
                 </div>
-            </div>
-            <div class="form-group">
-                <input type="email" id="form-email" class="form-control" placeholder="E-mail" ng-model="user.email">
-            </div>
-            <div class="form-group">
-                <input type="password" id="form-pass" class="form-control" placeholder="Senha" ng-model="user.pass">
-            </div>
-            <div class="form-group">
-                <input type="text" class="form-control" placehlder="Confirme sua senha">
-            </div>
+                <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" ng-model="user.email">
+                </div>
+                <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" ng-model="user.pass" >
+                </div>
+                <div class="checkbox">
+                <label><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
         </section>
-        <pre>{{JSON.stringify(user)}}</pre>
+        
     </div>
 </body>
 </html>
